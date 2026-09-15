@@ -1,6 +1,6 @@
 # Nbtstat
 
-VB6 working copy of `Nbtstat` from Dave Robinson's OneDrive Historical Dev `VB/Old` folder. Project title: Project1. `VersionCompanyName`: CSC.
+CSC VB6 NetBIOS/MAC helper (project Project1). Loads host,IP CSV lines, shells `NBTSTAT -a` via `c:\temp\nbt.bat` into `c:\temp\nbtinfo.txt`, parses `MAC Address =` lines into host,MAC,IP lists, cleans spaces from IPs, and Exports the results.
 
 **Source last updated:** 2026-08-27 · **Language:** VB6 · **Target:** VB6 Win32 · **Output:** WinForms exe
 
@@ -10,7 +10,7 @@ _Note: original OneDrive LastWriteTime values were wiped to 2026-08-27 by a zip 
 
 | Project | Language | Type | Purpose |
 |---------|----------|------|---------|
-| `Project1` (`Nbtstat.vbp`) | VB6 | WinForms exe | Project1 |
+| `Project1` (`Nbtstat.vbp`) | VB6 | WinForms exe | NBTSTAT MAC Address collector/exporter |
 
 ## How to open
 
@@ -20,6 +20,7 @@ Open the `.vbp` in Visual Basic 6.0 IDE:
 ## Requirements
 
 - Visual Basic 6.0 IDE
+- Windows `nbtstat` command available on PATH / system
 
 ## Attribution and provenance
 
@@ -28,4 +29,4 @@ Company names in project files: CSC.
 
 ## License
 
-MIT © 2026 VaderConsulting for Dave Robinson's code. See `LICENSE`.
+MIT (c) 2026 VaderConsulting for Dave Robinson's code. See `LICENSE`.
